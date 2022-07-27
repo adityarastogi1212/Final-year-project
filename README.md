@@ -24,3 +24,5 @@ change in wtf.html forms.target_tag() --> without ()
 >>>some changes in server.py and respective files based on errors and links. >>> this might not be needed
 
 >>> boom! it should work :) 
+
+>>> Don't forget to see Misc folder.
