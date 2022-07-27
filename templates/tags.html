@@ -1,0 +1,21 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<!--
+<%@ include file="header.jsp"%>-->
+	<header>
+												<center><h2>Collecting User Intrests</h2></center>
+											</header>
+<br/><br/>
+											<form action="/tags" method="post" style="padding-left:40em;">
+											<input type="checkbox" name="1" value="1"> Business<br>
+												<input type="checkbox" name="2" value="1"> Food<br>
+												<input type="checkbox" name="3" value="1"> Education<br>
+												<input type="checkbox" name="4" value="1"> Politics<br>
+												<input type="checkbox" name="5" value="1"> Computers<br>
+												<br><br>
+																							<input type="submit" value="Finish">
+											  </form>											  
+<!--   
+<%@ include file="footer.jsp"%> -->
+{% endblock content %}

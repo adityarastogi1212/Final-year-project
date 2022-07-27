@@ -1,0 +1,67 @@
+
+{% extends "uheader.html" %}
+{% block content %}
+<!--<%@ include file="uheader.jsp"%>
+<%@ page  import="java.sql.*" import="databaseconnection.*"  import="CT.*" %>
+<%
+    String message=request.getParameter("id");
+    if(message!=null && message.equalsIgnoreCase("succ")){
+    out.println("<script type=text/javascript>alert('Thank You!!')</script>");
+	}
+ %>
+
+<%
+
+try{
+
+	String eemail=(String)session.getAttribute("email");
+	eemail=Base64.encode(eemail);
+Connection con = databasecon.getconnection();
+Statement st=con.createStatement();
+//Statement st2=con.createStatement();
+String sql="select * from interaction where user='"+eemail+"'  and ans='non' ";
+System.out.println(sql);
+ResultSet rs=st.executeQuery(sql);
+%>-->
+	<header>
+												<h2>Questions </h2>
+													</header>
+<!--
+<%
+int i=0;
+while(rs.next()){
+%>
+-->
+
+{% set j=[0] %}
+{% for i in question %}
+<form method="post" action="/uqueries2">
+	<h4>{{j[0]+1}}) &nbsp;
+<font size="" color="#3d9c98">{{i}}
+</font><br> 
+<font size="-1" color="#6dc7c2">Questioned by: {{qname_list[j[0]]}}
+		
+</font><br><br>
+<input style="display:none" type="text" name="qid_s" value="{{qid_list[j[0]]}}"> 
+<input type="text" name="ans" required placeholder="Provide your answer...">
+<input type="submit" value="Submit">
+</form>
+{% if j.append(j.pop() + 1) %}{% endif %}
+{% endfor %}
+
+<!--<%
+
+}
+
+
+
+}
+catch(Exception e){
+System.out.println("11="+e);
+}
+%>-->
+            </table>
+
+
+<!-- <%@ include file="ufooter.jsp"%> -->
+{% endblock content%}

@@ -1,0 +1,38 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<!-- <%@ include file="header.jsp" %>
+
+
+	                  <%
+	
+	           
+                                                       String m=request.getParameter("m");
+                                                       if(m!=null && m.equalsIgnoreCase("fail"))
+                                                       {
+                                                               out.println("<font  color='red'><blink><h3>&nbsp;&nbsp;&nbsp;Login Fail   !! </blink></font></h3>");
+                                                       }
+                                               %> -->
+
+
+
+						<div class="opinion">
+				<h3><font size="+4" color="#e2e729">Social Q&A<span> Login</span></h3></font>
+			     <form method="post" action="/admin" >
+					
+					<input type="text" name="uid" placeholder="User Id" onfocus="this.value = '';"  required="" >
+<br>					
+					<input type="password" name="pwd" placeholder="Password" onfocus="this.value = '';"  required="" >
+		<br>
+					<input type="submit" value="Login">
+				</form>
+			</div>
+
+					   
+					    <div class="clearfix"></div>
+				  </div>
+			</div>
+		</div>
+<br><br><br><br><br><br><br>
+        <!-- <%@ include file="footer.jsp"%>  -->
+{% endblock content %}

@@ -1,0 +1,76 @@
+{% extends "admin_header.html" %}
+{% block content %}
+<!--<%@ include file="aheader.jsp"%>
+<%@ page  import="java.sql.*" import="java.util.*" import="databaseconnection.*" import="CT.Base64"%>
+-->
+<img src="images/eqau-3.png" width="682" height="93" border="0" alt=""><br><br>
+
+<table>
+<tr><td><h3><I><u>Asker Friends<td><h3><I><u>Answered <td><h3><I><u>Asked by Asker<td><h3><I><u>A=
+
+<!--<%
+String qid=request.getParameter("id");
+String cat=(String)session.getAttribute("cat"); String que=(String)session.getAttribute("que"); ;
+String qemail=(String)session.getAttribute("qemail"); ; String qname=(String)session.getAttribute("qname"); ;
+
+try{
+Connection con = databasecon.getconnection();
+Statement st=con.createStatement();
+Statement st2=con.createStatement();
+Statement st3=con.createStatement();
+
+String sql="select count(*) from interaction where asker='"+Base64.encode(qemail)+"' group by qid ";
+System.out.println(sql);
+
+double i=0;
+ResultSet rs=st.executeQuery(sql);
+while(rs.next()){
+	i=rs.getDouble(1);
+}
+
+ResultSet rs2=null;
+String sql2="select * from friends where user1='"+Base64.encode(qemail)+"' ";
+rs2=st2.executeQuery(sql2);
+
+while(rs2.next()){
+double d=0;
+String target=rs2.getString(2);
+rs=st.executeQuery("select count(*) from interaction where asker='"+Base64.encode(qemail)+"' and user='"+target+"' group by qid");
+System.out.println("select count(*) from interaction where asker='"+Base64.encode(qemail)+"' and user='"+target+"' group by qid");
+
+if(rs.next()){
+	d=rs.getDouble(1);
+	%>-->
+<!--	<tr><td><%=rs2.getString(2)%><td><%=d%><td><%=i%><td><%=d/i%>
+	<%
+			st3.executeUpdate("update calc set pa='"+d/i+"' where email='"+rs2.getString(2)+"' ");
+
+		}else{
+	%>
+	<tr><td><%=rs2.getString(2)%><td>0<td><%=i%><td>0.0
+	<%
+			st3.executeUpdate("update calc set pa='0.0' where email='"+rs2.getString(2)+"' ");
+
+		
+		}
+	
+	
+
+
+	}
+}
+
+catch(Exception e){
+System.out.println("11="+e);
+}
+%>-->
+</table>
+
+</h1>											
+	<form method="post" action="process5.jsp">
+		<input type="submit" value="Common Friends Count 'C'">
+	</form>	
+
+<!--<%@ include file="footer.jsp"%>
+-->
+{% endblock content %}

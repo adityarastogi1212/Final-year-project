@@ -1,0 +1,58 @@
+{% extends "aheader.html" %}
+{% block content %}
+
+<!--
+<%@ include file="aheader.jsp"%>
+<%@ page  import="java.sql.*" import="databaseconnection.*" import="CT.*"%>-->
+<img src="{{url_for('static',filename='eqau-1.PNG')}}" width="682" height="93" border="0" alt=""><br><br>
+<table>
+<tr><td><h3>Asker Friends<td><h3>Weight for '{{ cat }}'
+<!--<%
+String qid=request.getParameter("id");
+String cat=(String)session.getAttribute("cat"); String que=(String)session.getAttribute("que"); ;
+String qemail=(String)session.getAttribute("qemail"); ; String qname=(String)session.getAttribute("qname"); ;
+
+try{
+Connection con = databasecon.getconnection();
+Statement st=con.createStatement();
+Statement st2=con.createStatement();
+Statement st3=con.createStatement();
+st3.executeUpdate("delete from calc ");
+
+String sql="select * from friends where user1='"+Base64.encode(qemail)+"' ";
+System.out.println(sql);
+ResultSet rs=st.executeQuery(sql);
+ResultSet rs2=null;
+
+while(rs.next()){
+rs2=st2.executeQuery("select "+cat+" from weight  where user='"+rs.getString(2)+"' ");
+rs2.next();
+st3.executeUpdate("insert into calc(email, weight) values ('"+rs.getString(2)+"','"+rs2.getString(1)+"') ");
+%>-->
+{% set j=[0] %}
+{% for i in frie %}
+<tr><td><h4>{{ i.user2 }}</h4></td>
+<td><h4>{{ wei[j[0]] }}</h4></td>
+{% if j.append(j.pop() + 1) %}{% endif %}
+{% endfor %}
+
+<!--<%
+}
+
+}
+catch(Exception e){
+System.out.println("11="+e);
+}
+%>
+-->
+</table>
+											
+	<form method="post" action="/forwardque">
+
+		<input type="submit" value="Forward">
+
+	</form>	
+
+
+<!--<%@ include file="footer.jsp"%>-->
+{% endblock content %}

@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SocialQ&A</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{url_for('static',filename='main.css')}}" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header --><!-- 
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<h1><a href="index.html" id="logo">SocialQ&A: An Online Social Network Based Question and Answer System</a></h1>
+						</div>
+					</div>
+				</header>
+ -->
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="/user">User</a></li>
+						<li><a href="/signup">Sign Up</a></li>
+						<li><a href="/admin">Social Q&A</a></li>
+
+						<!-- <li>
+							<a href="#">Dropdown</a>
+							<ul>
+								<li><a href="#">Lorem ipsum dolor</a></li>
+								<li><a href="#">Magna phasellus</a></li>
+								<li>
+									<a href="#">Phasellus consequat</a>
+									<ul>
+										<li><a href="{{params['fb_url']}}" target="_blank">Lorem ipsum dolor</a></li>
+										<li><a href="{{params['twit_url']}}" target="_blank">Phasellus consequat</a></li>
+										<li><a href="{{params['insta_url']}}" target="_blank">Magna phasellus</a></li>
+										<li><a href="{{params['dribble_url']}}" target="_blank">Etiam dolore nisl</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Veroeros feugiat</a></li>
+							</ul>
+						</li> -->
+							</ul>
+				</nav>
+
+			<!-- Banner -->
+				<div id="banner-wrapper">
+					<section id="banner">
+						<h2>Retort: An Online Social Network Based <br><br>Question and Answer System</h2>
+						<!-- <a href="#" class="button">ddd</a>
+ -->					</section>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div id="main" class="container">
+						<div class="row 200%">
+							<div class="12u">
+				<h2 class="major"><span>Abstract</span></h2>
+						
+								<!-- Highlight -->
+									<section class="box highlight">
+										<p>
+											Abstract: Question and Answer (Q&A) systems play a vital role in our daily life for information and knowledge sharing. Users post questions and pick questions to answer in the system. Due to the rapidly growing user population and the number of questions, it is unlikely for a user to stumble upon a question by chance that (s)he can answer. Also, altruism does not encourage all users to provide answers, not to mention high quality answers with a short answer wait time. The primary objective of this paper is to improve the performance of Q&A systems by actively forwarding questions to users who are capable and willing to answer the questions. To this end, we have designed and implemented SocialQ&A, an online social network based Q&A system. SocialQ&A leverages the social network properties of common-interest and mutual-trust friend relationship to identify an asker through friendship who are most likely to answer the question, and enhance the user security. We also improve SocialQ&A with security and efficiency enhancements by protecting user privacy and identifies, and retrieving answers automatically for recurrent questions. We describe the architecture and algorithms, and conducted comprehensive large-scale simulation to evaluate SocialQ&A in comparison with other methods. Our results suggest that social networks can be leveraged to improve the answer quality and askers waiting time.
+										</p>
+									</section>
+
+							</div>
+						</div>
+						<div class="row 200%">
+							<div class="12u">
+
+								<!-- Features -->
+								
+
+							</div>
+						</div>
+					
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer" class="container">
+						
+					<div class="row 200%">
+						<div class="12u">
+
+							<!-- Contact -->
+								<section>
+									<h2 class="major"><span>Get in touch</span></h2>
+									<ul class="contact">
+										<li><a class="icon fa-facebook" href="{{params['fb_url']}}" target="_blank"><span class="label">Facebook</span></a></li>
+                                               				        <li><a class="icon fa-twitter" href="{{params['twit_url']}}" target="_blank"><span class="label">Twitter</span></a></li>
+                                                    				<li><a class="icon fa-instagram" href="{{params['insta_url']}}" target="_blank"><span class="label">Instagram</span></a></li>
+                                                    				<li><a class="icon fa-dribbble" href="{{params['dribble_url']}}" target="_blank"><span class="label">Dribbble</span></a></li>
+                                                    				<li><a class="icon fa-google-plus" href="{{params['google_url']}}" target="_blank"><span class="label">Google+</span></a></li>
+                                               				</ul>
+								</section>
+
+						</div>
+					</div>
+
+					<!-- Copyright -->
+						<div id="copyright">
+							<ul class="menu">
+								<li>&copy; All rights reserved</li><li>Design & Developed by: </li>
+							</ul>
+						</div>
+
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{url_for('static',filename='assets/js/jquery.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/jquery.dropotron.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/skel.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/skel-viewport.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/util.js')}}"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+
+	</body>
+</html>

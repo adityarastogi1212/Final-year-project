@@ -1,0 +1,36 @@
+{% extends "admin_header.html" %}
+{% block content %}
+
+<!--
+<%@ include file="aheader.jsp"%>
+<%@ page  import="java.sql.*" import="databaseconnection.*" import="CT.*"%>-->
+<table class="table table-bordered" style="width:50%;margin:auto;text-align: center;">
+<tr><td><h3>Asker Friends<td><h3>Weight
+
+{% set j=[0] %}
+{% for i in frie %}
+<tr><td><h4>{{ i.user2 }}</h4></td>
+<td><h4>{{ wei[j[0]] }}</h4></td></tr>
+{% if j.append(j.pop() + 1) %}{% endif %}
+{% endfor %}
+
+<!--<%
+}
+
+}
+catch(Exception e){
+System.out.println("11="+e);
+}
+%>
+-->
+</table>
+											
+	<form method="post" action="/forwardque" style="width:10%;margin:auto;margin-top:10px;margin-bottom: 10px;">
+
+		<input type="submit" value="Forward" class="btn btn-primary py-3 px-5">
+
+	</form>	
+
+
+<!--<%@ include file="footer.jsp"%>-->
+{% endblock content %}

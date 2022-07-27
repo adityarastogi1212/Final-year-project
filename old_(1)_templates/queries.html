@@ -1,0 +1,42 @@
+{% extends "aheader.html" %}
+{% block content %}
+<!--<%@ include file="aheader.jsp"%>
+<%@ page  import="java.sql.*" import="databaseconnection.*"%>
+
+
+<%
+
+try{
+Connection con = databasecon.getconnection();
+Statement st=con.createStatement();
+//Statement st2=con.createStatement();
+String sql="select * from query where status='new' ";
+System.out.println(sql);
+ResultSet rs=st.executeQuery(sql);
+%> -->
+	<header>
+												<h2>Queries</h2>													</header>
+<table>
+<tr><td><h4>Qid</h4><td><h4>Query</h4><td><h4>Asker</h4><td>
+{% for i in quer %}
+<!--<%
+while(rs.next()){
+%>-->
+<tr><td><h3>{{ i.qid }}<td><h3><u>{{ i.queri }}</u><td><h3>{{ i.uname }}<td><a href="/process?id={{ i.qid }}"><h3>Process</a>
+
+<!--<%
+
+}
+
+
+
+}
+catch(Exception e){
+System.out.println("11="+e);
+}
+%>-->
+{% endfor %}
+            </table>
+<!--<%@ include file="footer.jsp"%>
+-->
+{% endblock content %}

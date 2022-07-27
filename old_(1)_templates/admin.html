@@ -1,0 +1,93 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+                <div class="row no-gutters slider-text align-items-end justify-content-center">
+                  <div class="col-md-9 ftco-animate pb-5 text-center">
+                    <h1 class="mb-3 bread">Admin Login</h1>
+                    <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Admin <i class="ion-ios-arrow-forward"></i></span></p>
+                  </div>
+                </div>
+              </div>
+  
+<section style="margin-top:-100px" class="ftco-section ftco-no-pb contact-section">
+        <div class="container">
+          <div class="row block-9">
+            <div class="col-md-6 order-md-last d-flex">
+              <form method="post" action="/user" class="bg-light p-5 contact-form">
+                <div class="form-group">
+                  <input type="text" name="uid" class="form-control" placeholder="Admin Id" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="pwd" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Login" class="btn btn-primary py-3 px-5">
+                </div>
+              </form>
+            
+            </div>
+  
+            <div class="col-md-3 d-flex">
+                    <div id="map" class="bg-white"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <div class="container">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-8 text-wrap text-center heading-section ftco-animate">
+                        <p></p>
+                    <h2 class="mb-4"><span><a href="/signup"></a></span></h2>
+                  </div>
+                </div>
+	      </div> -->
+	      <section class="ftco-subscribe ftco-section bg-light">
+			<div class="overlay">
+			  <div class="container">
+			    <div class="row d-flex justify-content-center">
+			      <div class="col-md-8 text-wrap text-center heading-section ftco-animate">
+				<h2 class="mb-4"><span>Contact Admin</span></h2>
+				<p>E mail : arpitsrvstv2833@gmail.com</p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		      </section>
+
+	      {% endblock content %}
+	      <!-- <%@ include file="header.jsp" %>
+	      
+	      
+					<%
+		      
+				 
+								     String m=request.getParameter("m");
+								     if(m!=null && m.equalsIgnoreCase("fail"))
+								     {
+									     out.println("<font  color='red'><blink><h3>&nbsp;&nbsp;&nbsp;Login Fail   !! </blink></font></h3>");
+								     }
+							     %> -->
+	      
+	      
+<!-- 	      
+							      <div class="opinion">
+					      <h3><font size="+4" color="#e2e729">Social Q&A<span> Login</span></h3></font>
+					   <form method="post" action="/admin" >
+						      
+						      <input type="text" name="uid" placeholder="User Id" onfocus="this.value = '';"  required="" >
+	      <br>					
+						      <input type="password" name="pwd" placeholder="Password" onfocus="this.value = '';"  required="" >
+			      <br>
+						      <input type="submit" value="Login">
+					      </form>
+				      </div>
+	      
+							 
+							  <div class="clearfix"></div>
+						</div>
+				      </div>
+			      </div>
+	      <br><br><br><br><br><br><br> -->
+		      <!-- <%@ include file="footer.jsp"%>  -->

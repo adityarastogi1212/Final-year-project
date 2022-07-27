@@ -1,0 +1,44 @@
+
+{% extends "user_header.html" %}
+{% block content %}
+<!-- <%@ include file="uheader.jsp"%> -->
+<!--
+	                  <%
+                                                       String message=request.getParameter("id");
+                                                       
+													   
+													   if(message!=null && message.equalsIgnoreCase("s1"))
+                                                       {
+                                                                  out.println("<script type=text/javascript>alert('Friend Request Sent '); </script>");
+                                                       }
+                                                       if(message!=null && message.equalsIgnoreCase("succ"))
+                                                       {
+                                                                  out.println("<script type=text/javascript>alert('Your Post is posted successfully!! '); </script>");
+                                                       }
+                                                       if(message!=null && message.equalsIgnoreCase("s2"))
+                                                       {
+                                                                  out.println("<script type=text/javascript>alert('Friend Request already Sent '); </script>");
+                                                       }
+
+			    %> -->
+
+ 
+ <div class="spec ">
+        <div class="container">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-8 text-wrap text-center heading-section ftco-animate">
+                    <h2 class="mb-4"><span>Welcome {{ username }}</span></h2>
+                  </div>
+                </div>
+              </div>
+				<h3></h3>
+					<div class="ser-t">
+						<b></b>
+						<span><i></i></span>
+						<b class="line"></b>
+					</div>
+			</div>
+
+<br><br><br><br><br>
+<!--<%@ include file="ufooter.jsp"%>-->
+{% endblock content%}

@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Social Q&A</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{url_for('static',filename='main.css')}}" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<h1><a href="" id="logo">Social Q&A:</a></h1>
+							<p>An Online Social Network Based Question and Answer System</p>
+						</div>
+					</div>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li ><a href="/">Home</a></li>
+						<li><a href="/user">User</a></li>
+						<li><a href="/signup">Sign Up</a></li>
+						<li><a href="/admin">Social Q&A</a></li>
+						</ul>
+				</nav>
+
+			<!-- Main -->	<div id="main-wrapper">
+					<div id="main" class="container">
+						<div class="row">
+							<div class="3u 12u(mobile)">
+								<div class="sidebar">
+											<section>
+											</section>
+
+								</div>
+							</div>
+							<div class="9u 12u(mobile) important(mobile)">
+								<div class="content content-right">
+
+									<!-- Content -->
+
+										<article class="box page-content">
+
+											<section>
+
+											{% block content %} {% endblock %}
+
+                                                <!--footer-->
+                      </section>
+
+                                        </div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        
+                        <!-- Footer -->
+                            <footer id="footer" class="container">
+                                    
+                                <div class="row 200%">
+                                    <div class="12u">
+            
+                                        <!-- Contact -->
+                                            <section>
+                                                <h2 class="major"><span>Get in touch</span></h2>
+                                                <ul class="contact">
+                                                    <li><a class="icon fa-facebook" href="{{params['fb_url']}}" target="_blank"><span class="label">Facebook</span></a></li>
+                                                    <li><a class="icon fa-twitter" href="{{params['twit_url']}}" target="_blank"><span class="label">Twitter</span></a></li>
+                                                    <li><a class="icon fa-instagram" href="{{params['insta_url']}}" target="_blank"><span class="label">Instagram</span></a></li>
+                                                    <li><a class="icon fa-dribbble" href="{{params['dribble_url']}}" target="_blank"><span class="label">Dribbble</span></a></li>
+                                                    <li><a class="icon fa-google-plus" href="{{params['google_url']}}" target="_blank"><span class="label">Google+</span></a></li>
+                                                </ul>
+                                            </section>
+            
+                                    </div>
+                                </div>
+            
+                                <!-- Copyright -->
+                                    <div id="copyright">
+                                        <ul class="menu">
+                                            <li>&copy; All rights reserved</li><li>Design & Developed by:S.A.A.J.</li>
+                                        </ul>
+                                    </div>
+            
+                            </footer>
+            
+                        </div>
+            
+                    <!-- Scripts -->
+                        <script src="assets/js/jquery.min.js"></script>
+                        <script src="assets/js/jquery.dropotron.min.js"></script>
+                        <script src="assets/js/skel.min.js"></script>
+                        <script src="assets/js/skel-viewport.min.js"></script>
+                        <script src="assets/js/util.js"></script>
+                        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+                        <script src="assets/js/main.js"></script>
+            
+                </body>
+            </html>

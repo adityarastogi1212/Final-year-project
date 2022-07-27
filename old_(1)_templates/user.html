@@ -1,0 +1,74 @@
+
+
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+                <div class="row no-gutters slider-text align-items-end justify-content-center">
+                  <div class="col-md-9 ftco-animate pb-5 text-center">
+                    <h1 class="mb-3 bread">Log In</h1>
+                    <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>User <i class="ion-ios-arrow-forward"></i></span></p>
+                  </div>
+                </div>
+              </div>
+  
+<section style="margin-top:-100px" class="ftco-section ftco-no-pb contact-section">
+        <div class="container">
+          <div class="row block-9">
+            <div class="col-md-6 order-md-last d-flex">
+              <form method="post" action="/user" class="bg-light p-5 contact-form">
+                <div class="form-group">
+                  <input type="text" name="uid" class="form-control" placeholder="User Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="pwd" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Login" class="btn btn-primary py-3 px-5">
+                </div>
+              </form>
+            
+            </div>
+  
+            <div class="col-md-3 d-flex">
+                    <div id="map" class="bg-white"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-8 text-wrap text-center heading-section ftco-animate">
+                        <p>Don't have account</p>
+                    <h2 class="mb-4"><span><a href="/signup">Sign Up</a></span></h2>
+                  </div>
+                </div>
+              </div>
+{% endblock content%}
+
+<!-- <%@ include file="header.jsp"%> -->
+<!-- <form method="post" action="/user">
+        <%
+                                     String m=request.getParameter("id");
+                                     if(m!=null && m.equalsIgnoreCase("fail"))
+                                     {
+                                             out.println("<font  color='red'><blink><h3>&nbsp;&nbsp;&nbsp;Login Fail   !! </blink></font></h3>");
+                                     }
+                             %> 
+      
+<table width="60%" align=right cellspacing=20 ><tr><td>
+<tr><td><h2><font size="" color="#ff9900">User Login..</font>
+<tr><td><input type="text" name="uid" required placeholder="User Email" size="50">
+<tr><td><input type="password" name="pwd" required placeholder="Password" size="50">
+
+      <tr><td>		  <div class="form_settings"><input class="submit" type="submit"  value="Login" /></div><td>
+
+<tr><td align="right"><a href="signup.jsp">SignUp</a>
+              
+</tr>
+</table>
+
+</form> -->
+              
+                                                                       
+
+<!-- <%@ include file="footer.jsp"%> -->

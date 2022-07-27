@@ -1,0 +1,13 @@
+{
+  "params":
+  {
+    "local_server": "TRUE",
+    "local_uri" : "mysql+pymysql://root:12345@localhost/social",
+    "prod_uri" : "mysql+pymysql://root:12345@localhost/social",
+    "fb_url" : "https://facebook.com/saaj",
+    "twit_url" : "https://twitter.com/saaj",
+    "insta_url" : "https://instagram.com/saaj",
+    "dribble_url" : "https://dribble.com/saaj",
+    "google_url" : "https://google.com/saaj"
+  }
+}

@@ -1,0 +1,32 @@
+
+
+{% extends "layout.html" %}
+{% block content %}
+<!-- <%@ include file="header.jsp"%> -->
+<form method="post" action="/user">
+	                  <!-- <%
+                                                       String m=request.getParameter("id");
+                                                       if(m!=null && m.equalsIgnoreCase("fail"))
+                                                       {
+                                                               out.println("<font  color='red'><blink><h3>&nbsp;&nbsp;&nbsp;Login Fail   !! </blink></font></h3>");
+                                                       }
+                                               %> -->
+			
+	<table width="60%" align=right cellspacing=20 ><tr><td>
+<tr><td><h2><font size="" color="#ff9900">User Login..</font>
+	<tr><td><input type="text" name="uid" required placeholder="User Email" size="50">
+		<tr><td><input type="password" name="pwd" required placeholder="Password" size="50">
+
+			<tr><td>		  <div class="form_settings"><input class="submit" type="submit"  value="Login" /></div><td>
+
+		<tr><td align="right"><a href="signup.jsp">SignUp</a>
+				
+</tr>
+</table>
+
+</form>
+				
+											 
+
+<!-- <%@ include file="footer.jsp"%> -->
+{% endblock content%}

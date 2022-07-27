@@ -1,0 +1,23 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<!--
+<%@ include file="header.jsp"%>-->
+	<header>
+												<h2>Collecting User Intrests</h2>
+											</header>
+
+<form method="post" action="/tags">
+<input type="text" name="1" value="Business"><br>	
+<input type="text" name="2" value="Food"><br>	
+<input type="text" name="3" value="Education"><br>	
+<input type="text" name="4" value="Politics"><br>	
+<input type="text" name="5" value="Computers"><br>	
+
+
+<input type="submit" Value="Finish">
+
+</form>
+<!--   
+<%@ include file="footer.jsp"%> -->
+{% endblock content %}

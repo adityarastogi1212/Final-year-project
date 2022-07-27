@@ -1,0 +1,37 @@
+
+{% extends "uheader.html" %}
+{% block content %}
+<!-- <%@ include file="uheader.jsp"%> -->
+<!--
+	                  <%
+                                                       String message=request.getParameter("id");
+                                                       
+													   
+													   if(message!=null && message.equalsIgnoreCase("s1"))
+                                                       {
+                                                                  out.println("<script type=text/javascript>alert('Friend Request Sent '); </script>");
+                                                       }
+                                                       if(message!=null && message.equalsIgnoreCase("succ"))
+                                                       {
+                                                                  out.println("<script type=text/javascript>alert('Your Post is posted successfully!! '); </script>");
+                                                       }
+                                                       if(message!=null && message.equalsIgnoreCase("s2"))
+                                                       {
+                                                                  out.println("<script type=text/javascript>alert('Friend Request already Sent '); </script>");
+                                                       }
+
+			    %> -->
+
+ 
+ <div class="spec ">
+				<h3>Welcome {{ username }}</h3>
+					<div class="ser-t">
+						<b></b>
+						<span><i></i></span>
+						<b class="line"></b>
+					</div>
+			</div>
+
+<br><br><br><br><br>
+<!--<%@ include file="ufooter.jsp"%>-->
+{% endblock content%}

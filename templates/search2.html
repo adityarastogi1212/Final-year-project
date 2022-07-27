@@ -1,0 +1,11 @@
+{% extends "user_header.html" %}
+{% block content %}
+<table align="center" >
+<br><br><br>
+{% if x!= 0 %}
+	<tr><td> <h2>Friend Request Already Sent !!!</h2> </td></tr>
+{% else %}
+	<tr><td> <h2>Friend Request Sent !!!</h2> </td></tr>
+{% endif %}
+</table>
+{% endblock content%}

@@ -1,0 +1,28 @@
+{% extends "user_header.html" %}
+{% block content %}
+<form method="post" action="/search2">
+<table align="center" >
+
+  
+<tr><td>
+<tr><td> <h2>Results are</h2>
+    {% for i in u_s %}
+    {% set a = [0] %}
+    {% for j in u_f %}
+    {% if i.email == j.user2 %}
+    {% if a.append(a.pop() + 1) %}{% endif %} {# increment count by 1 #}
+    {% endif %}
+    {% endfor %}
+    {% if a.pop(0)==0 and i.email!= email %}
+    <tr><td colspan=2> <br><h3>Name:	{{i.name}}  {{i.lname}}
+        <tr><td colspan=2> <h3>Email:	{{i.email}}
+
+<input type="hidden" name="mail" value="{{ i.email }}"/>
+<tr><td colspan=2><input  class="form-control1"  type="submit" value="Send Friend Reqest"/>	
+    <br><br>	
+    {% endif %}		
+    {% endfor %}
+</form><td>
+</table>
+
+{% endblock content%}

@@ -1,0 +1,139 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="row no-gutters slider-text align-items-end justify-content-center">
+      <div class="col-md-9 ftco-animate pb-5 text-center">
+        <h1 class="mb-3 bread">Sign Up</h1>
+        <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Sign Up <i class="ion-ios-arrow-forward"></i></span></p>
+      </div>
+    </div>
+  </div>
+<section style="margin-top:-100px" class="ftco-section ftco-no-pb contact-section">
+    <div class="container">
+      <div class="row block-9">
+        <div class="col-md-6 order-md-last d-flex">
+          <form action="#" class="bg-light p-5 contact-form" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="lname" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="addr" placeholder="Address">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="city" placeholder="City">
+            </div>
+            <div class="form-group">
+              <input type="text" pattern="[0-9]*" minlength="6" maxlength="6" class="form-control" name="zip" placeholder="Zip">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="email" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <select class="form-control" name="gen" aria-describedby="basic-addon1">
+                <option value="Male" selected>Male
+                <option value="Female">Female
+              </select> 
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" pattern="[0-9]*" minlength="10" maxlength="10" name="tele" placeholder="Contact no.">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="pwd" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Sign Up" class="btn btn-primary py-3 px-5">
+            </div>
+          </form>
+        
+        </div>
+
+        <div class="col-md-3 d-flex">
+          <div id="map" class="bg-white"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8 text-wrap text-center heading-section ftco-animate">
+                <p>Have an account</p>
+            <h2 class="mb-4"><span><a href="/signup">Log In</a></span></h2>
+          </div>
+        </div>
+      </div>
+  </section>
+
+{% endblock content %}
+<!-- <form name="reg" action="/signup" method="post"   name="pwForm" >
+					                
+
+			
+  <div class="opinion">
+      
+      <CENTER>
+        <header>
+                  <h2>User Signup</h2>
+
+      </header>
+    <CENTER>
+      <table width="70%" ALIGN="CENTER">
+      <tr><td>
+    <div class="input required -group">
+<span class="input required -group-addon" id="basic-addon1">First Name</span>
+<input required  type="text" class="form-control"  name="name" aria-describedby="basic-addon1">
+</div>
+    <div class="input required -group">
+<span class="input required -group-addon" id="basic-addon1">Last Name</span>
+<input required  type="text" class="form-control"  name="lname" aria-describedby="basic-addon1">
+</div>
+
+<div class="input required -group">
+<span class="input required -group-addon" id="basic-addon1">Address</span>
+<input required  type="text" class="form-control"  name="addr" aria-describedby="basic-addon1">
+</div>
+
+<div class="input required -group">
+<span class="input required -group-addon" id="basic-addon1">City</span>
+<input required  type="text" class="form-control"  name="city" aria-describedby="basic-addon1">
+</div>
+
+<div class="input required -group">
+<span class="input required -group-addon" id="basic-addon1">Zip</span>
+<input required   type="text" 	pattern="[0-9]*" minlength="6" maxlength="6"  type="text" class="form-control"  name="zip" aria-describedby="basic-addon1">
+</div>
+
+
+<div class="input required -group">
+<span class="input required -group-addon" id="basic-addon1">Email</span>
+<input required  type="text" class="form-control"  name="email" aria-describedby="basic-addon1">
+</div>		
+
+<div class="input required -group">
+<span class="input required -group-addon" id="basic-addon1">Gender</span>
+<select class="form-control"  name="gen" aria-describedby="basic-addon1">
+<option value="Male" selected>Male
+<option value="Female">Female
+</select>  
+
+</div>		
+
+  
+<div class="input required -group">
+<span class="input required -group-addon" id="basic-addon1">						Contact no</span>
+<input required  type="text" class="form-control" pattern="[0-9]*" minlength="10" maxlength="10" name="tele" aria-describedby="basic-addon1">
+</div>			
+<div class="input required -group">
+<span class="input required -group-addon" id="basic-addon1">						Password</span>
+<input required  type="password" class="form-control" name="pwd" aria-describedby="basic-addon1">
+</div>			<br>
+<div class="input required -group">
+<input required  type="submit" value="Register">
+</div>
+    
+    </form>
+  </table>
+</div> -->

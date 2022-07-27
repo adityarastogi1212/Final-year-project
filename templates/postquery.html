@@ -1,0 +1,48 @@
+{% extends "user_header.html" %}
+{% block content %}
+<!-- <%@ include file="uheader.jsp"%> -->
+
+	    <!--              <%
+                                                       String message=request.getParameter("id");
+                                                       
+													   
+													   if(message!=null && message.equalsIgnoreCase("succ"))
+                                                       {
+                                                                  out.println("<script type=text/javascript>alert('Query Posted Successfully '); </script>");
+                                                       }
+
+			    %> -->
+			
+{% if id=="succ" %}
+	<script type=text/javascript>alert('Query Posted Successfully '); </script>
+{% endif %}
+<div class="container">
+		<div class="row d-flex">
+		  <div class="col-md-12 text-wrap heading-section ftco-animate">
+			<h2 class="mb-4"><span>Post Your Query</span></h2>
+			<div class="row d-flex mt-4 mb-4">
+			  <div class="col-md-12">
+				<form method="post" action="/postquery" class="contact-form">
+					<div class="form-group">
+						<textarea name="query" cols="50" rows="10" class="form-control" placeholder="Your Question ...."></textarea>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Post" class="submit btn btn-primary py-2 px-5">
+					</div>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+							<!-- <header>
+												<h2>Post Your Query</h2>
+											</header>
+			<form method="post" action="/postquery">
+	<input type="text" name="query" required>
+<br>
+ <input type="submit" value="Post">
+
+</form><br><br><br><br><br> -->
+<!-- <%@ include file="ufooter.jsp"%> -->
+{% endblock content%}
