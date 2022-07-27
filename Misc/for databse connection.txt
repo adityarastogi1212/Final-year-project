@@ -21,3 +21,25 @@ insert into `Interaction` (`qid`,`asker`,`user`,`ans`) values ('1','Abhi','Adi',
 insert into `Calc` (`email`,`weight`,`ps`,`pa`,`pc`,`closeness`,`metric`) values ('abhi@gmail.com','64','10','11','12','100','50');
 insert into `Friends` (`user1`,`user2`) values ('abhi','adi');
 insert into `Weight` (`Users`,`Politics`,`Food`,`Movie`,`Physics`) values ('Abhi','34','235','146','102');
+
+
+show databases;
+use social;
+select * from Queries;
+drop table Queries;
+select * from Users;
+select * from Friends;
+select * from Calc;
+select * from Weight;
+select * from Interaction;
+select user2 from Friends where user1="bharadawaj@gmail.com";
+show tables;
+delete from Users where uid<7;
+delete from Interaction;
+drop table Weight;
+set sql_safe_updates=0;
+update Weight set food = 1, Education=1, Politics=1, Computer=1 where Users = "arpit@gmail.com";
+create table Weight(Users varchar(100), Business integer, Food integer, Education integer, Politics integer, Computer integer);
+create table Queries(qid integer primary key auto_increment, queri varchar(80), uemail varchar(80), uname varchar(80), status varchar(12));
+create table Frequest(sno integer primary key auto_increment, ufrom varchar(80), uto varchar(80), requ varchar(12));
+create table Users(uid integer primary key auto_increment, name varchar(80), lname varchar(80), pwd varchar(120), email varchar(80), tele varchar(12), city varchar(200), zip varchar(120), gen varchar(120), addr varchar(120), profilepic varchar(120));
