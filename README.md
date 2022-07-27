@@ -1,4 +1,4 @@
-# Final-year-project  Social Q&A system
+# Social Q&A system ... ( Final-year-project )
 Final year project using ML ( Naive Bayes Algorithm )
 
 
